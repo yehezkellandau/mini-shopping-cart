@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import Input from '../components/Input';
 import Select from '../components/Select';
+import Button from '../components/Button';
 import {Product, ProductStatus} from '../types/types';
 
 const defaultProductState = {
@@ -32,6 +33,9 @@ const Form = () => {
                 value={name}
                 />
                 <Select value={status}
+                />
+                <Button
+                label="Add Product"
                 />
             </form>
 
