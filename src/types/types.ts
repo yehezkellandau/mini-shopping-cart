@@ -9,3 +9,5 @@ export type Product = {
     quantity:number;
     status: ProductStatus;
 }
+export type StateNameType = "name" | "price" | "quantity" | "status";
+export type OnChangeType = (stateName: StateNameType, value: string) => void;
