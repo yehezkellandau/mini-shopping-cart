@@ -11,3 +11,4 @@ export type Product = {
 }
 export type StateNameType = "name" | "price" | "quantity" | "status";
 export type OnChangeType = (stateName: StateNameType, value: string) => void;
+export type AddToCartType = (product: Product) => void;
